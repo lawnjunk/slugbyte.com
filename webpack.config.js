@@ -11,9 +11,7 @@ let production = process.env.NODE_ENV === 'production'
 
 let plugins = [
   new ExtractPlugin('bundle-[hash].css'),
-  new HtmlPlugin({
-    title: 'slugbyte',
-  }),
+  new HtmlPlugin({ template: `${__dirname}/src/index.html`}),
   new webpack.DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
     __API_URI__: JSON.stringify(process.env.API_URL),

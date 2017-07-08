@@ -2,7 +2,7 @@
 
 module.exports = {
   html: (req, res, next) => {
-    res.status(404).sendFile(`${__dirname}/../build/404.html`)
+    res.sendFile('/index.html', {root: `${__dirname}/../build`})
   },
   simple: (req, res, next) => {
     res.sendStatus(404)

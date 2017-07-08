@@ -6,7 +6,10 @@
   "scripts": {
     "start": "./bin/start.sh",
     "stop": "./bin/stop.sh",
-    "watch": "webpack-dev-server --inline --hot"
+    "build": "webpack",
+    "watch": "nodemon index.js",
+    "devServer": "webpack-dev-server --inline --hot",
+    "test": "jest"
   },
   "dependencies": {
     "babel": "^6.23.0",
@@ -19,6 +22,7 @@
     "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
     "enzyme": "^2.9.1",
+    "expect": "^1.20.2",
     "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
@@ -26,6 +30,7 @@
     "jest": "^20.0.4",
     "morgan": "^1.8.2",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
