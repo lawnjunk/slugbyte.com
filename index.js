@@ -1,8 +1,8 @@
 'use strict'
 
-const app = require('express')()
-app.use(require('morgan')('common'))
-app.all('*', (req, res) => {
-  res.redirect('http://www.slugbyte.com')
+require('dotenv').config({path: `${__dirname}/.dev.env`})
+require('./lib/server.js').start()
+.then(() => {
+  require('./lib/server.js').stop()
 })
-app.listen(80, () =>  console.log('server up :: 80'))
+
