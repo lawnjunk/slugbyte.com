@@ -1,4 +1,4 @@
-.slugbyte-pid 
+.slugbyte.pid 
 .*.env
 # Created by https://www.gitignore.io/api/osx,vim,node,linux,windows
 

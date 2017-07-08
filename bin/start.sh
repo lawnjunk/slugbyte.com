@@ -2,4 +2,4 @@
 set -euo pipefail 
 
 node $PWD/index.js & 
-echo $! > .slugbyte-pid 
+echo $! > .slugbyte.pid 
