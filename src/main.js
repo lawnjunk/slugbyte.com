@@ -13,6 +13,7 @@ class App extends React.Component {
     return (
       <div>
         <h1> cool </h1>
+        <h2> beans </h2>
       </div>
     )
   }
