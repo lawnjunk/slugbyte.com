@@ -12,7 +12,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <h1> cool beans </h1>
+        <h1> cool </h1>
       </div>
     )
   }
