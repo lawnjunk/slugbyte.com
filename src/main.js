@@ -14,6 +14,7 @@ class App extends React.Component {
       <div>
         <h1> cool </h1>
         <h2> beans </h2>
+        <h2> beans </h2>
       </div>
     )
   }
