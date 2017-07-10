@@ -1,0 +1,81 @@
+@import "_vars.scss";
+
+@mixin base {
+  head {
+    display: none;
+  }
+
+  html, body {
+    position: relative;
+    font-family: $font-sans-serif;
+  }
+
+  span, em, strong, a{
+    display: inline;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  em {
+    font-style: oblique;
+  }
+
+  h1, h2, h3, h4, h5, h6, blockquote, q {
+    font-family: $font-serif;
+  }
+
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.4em; }
+  h3 { font-size: 2.1em; }
+  h4 { font-size: 2em; }
+  h5 { font-size: 1.8em; }
+  h6 { font-size: 1.5em; }
+
+  a {
+    color: $color-main * 0.8;
+    &:hover { color: $color-accent * 0.8; }
+    &:active { color: $color-accent * 0.5; }
+    &:visited { color: $color-accent; }
+  }
+
+  blockquote {
+    padding-left: 1em;
+    border-left: 0.25em solid $color-lightgrey;
+  }
+
+  pre {
+    white-space: pre;
+    font-family: $font-monospace;
+  }
+
+  input, textarea {
+    padding: $pad;
+    resize: none;
+    border: $borderwidth solid $color-lightgrey;
+    &:focus {
+      border: $borderwidth solid $color-darkgrey;
+    }
+  }
+
+  button, input[type='submit'] {
+    border: none;
+    padding: $pad;
+    background: $color-error;
+    &:focus { 
+      background: $color-main * 0.8; 
+      color: $color-white;
+    }
+    &:hover { 
+      background: $color-main * 0.6; 
+      color: $color-white;
+    }
+    &:active { 
+      background: $color-main * 0.4; 
+      color: $color-white;
+    }
+  }
+
+
+}

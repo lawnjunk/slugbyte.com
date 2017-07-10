@@ -1,0 +1,27 @@
+@mixin grid_width ($width){
+  float: left;
+  width: $width;
+}
+
+@mixin grid_height ($height){
+  float: left;
+  height: $height;
+}
+
+@mixin module {
+  ._100w { @include grid_width(100%); }
+  ._80w { @include grid_width(80%); }
+  ._60w { @include grid_width(60%); }
+  ._50w { @include grid_width(50%); }
+  ._40w { @include grid_width(40%); }
+  ._25w { @include grid_width(25%); }
+  ._20w { @include grid_width(20%); }
+
+  ._100h { @include grid_height(100%); }
+  ._80h { @include grid_height(80%); }
+  ._60h { @include grid_height(60%); }
+  ._50h { @include grid_height(50%); }
+  ._40h { @include grid_height(40%); }
+  ._25h { @include grid_height(25%); }
+  ._20h { @include grid_height(20%); }
+}

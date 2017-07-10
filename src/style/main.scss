@@ -1,0 +1,7 @@
+@import "_reset.scss";
+@import "_base.scss";
+@import "_module.scss";
+
+@include reset;
+@include base;
+@include module;

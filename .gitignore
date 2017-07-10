@@ -1,3 +1,5 @@
+db
+google-key.json
 build
 .slugbyte.pid 
 .*.env
